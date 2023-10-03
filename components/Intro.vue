@@ -1,6 +1,6 @@
 <template>
-    <v-container class="mt-10">
-        <v-row class="justify-center align-center">
+    <v-container class="mt-10 fill-height">
+        <v-row class="justify-center align-center h-100">
             <v-col>
                 <v-row>
                     <h1>Hi, I'm <span class="golden-words">Harshith</span><br>and I am a passionate<br>
@@ -8,23 +8,23 @@
                         <span class="cursor golden-words" :class="{ 'typing': typeStatus }">&nbsp;</span>
                     </h1>
                 </v-row>
-                <v-row class="mt-16">
-                    <v-col cols="12" md="2">
+                <v-row class="mt-8">
+                    <v-col cols="12" md="2" class="pl-0">
                         <NuxtLink to="https://www.linkedin.com/in/harshithrao07/" target="_blank">
                             <span class="mdi mdi-linkedin"></span>
                         </NuxtLink>
                     </v-col>
-                    <v-col cols="12" md="2">
+                    <v-col cols="12" md="2" class="pl-0">
                         <NuxtLink to="https://github.com/harshithrao07/" target="_blank">
                             <span class="mdi mdi-github"></span>
                         </NuxtLink>
                     </v-col>
-                    <v-col cols="12" md="2">
+                    <v-col cols="12" md="2" class="pl-0">
                         <NuxtLink to="https://www.instagram.com/harshith._.rao/" target="_blank">
                             <span class="mdi mdi-instagram"></span>
                         </NuxtLink>
                     </v-col>
-                    <v-col cols="12" md="2">
+                    <v-col cols="12" md="2" class="pl-0">
                         <NuxtLink to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=harshithrao316@gmail.com"
                             target="_blank">
                             <span class="mdi mdi-gmail"></span>
@@ -32,8 +32,8 @@
                     </v-col>
                 </v-row>
             </v-col>
-            <v-col>
-                <v-img src="/images/harshith_rao1.jpeg" width="55%" class="mx-auto image"></v-img>
+            <v-col class="py-10">
+                <v-img src="/images/harshith_rao1.jpeg" width="55%" class="mx-auto image my-5"></v-img>
             </v-col>
         </v-row>
     </v-container>
@@ -99,20 +99,19 @@ export default {
 .image {
     border-radius: 100% 60% 80% 70%;
     border: 2px solid white;
-    outline: 2px dashed white;
+    outline: 2px dashed #FFB000;
     outline-offset: 5px;
 }
-.image:hover{
-    border: 2px solid #FFB000;
-    outline: 2px dashed #FFB000;
-    outline-offset: 10px;
-}
-.mdi{
+
+
+.mdi {
     font-size: 2.7rem;
 }
-.mdi:hover{
+
+.mdi:hover {
     color: #FFB000;
 }
+
 h1 {
     span.typed-text {
         color: #FFB000;

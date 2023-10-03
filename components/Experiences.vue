@@ -1,7 +1,7 @@
 <template>
     <v-container class="mt-16">
         <h1 class="mb-10">Experiences</h1>
-        <v-card class="bg-black card">
+        <v-card class="card">
             <v-card-title class="mt-3 pb-4 card-title">
                 <h2 class="ml-2">Exelon Circuits Pvt. Ltd.
                     <NuxtLink to="https://exeloncircuits.com/" target="_blank">
@@ -14,11 +14,12 @@
             <v-card-text class="mb-0 mt-5">
                 <ul class="py-1">
                     <li>Worked on building a multi page landing site for <NuxtLink target="_blank"
-                            to="https://www.kenfront.com/" style="text-decoration: none;"><span
-                                class="golden-words" style="text-decoration: underline;">Kenfront Consulting Private
+                            to="https://www.kenfront.com/" style="text-decoration: none;"><span class="golden-words"
+                                style="text-decoration: underline;">Kenfront Consulting Private
                                 Limited</span></NuxtLink> and <NuxtLink target="_blank"
                             to="https://main--remarkable-cannoli-dbdc73.netlify.app/" style="text-decoration: none;"><span
-                                class="golden-words" style="text-decoration: underline;">SpendControl</span></NuxtLink> using the latest technologies such as
+                                class="golden-words" style="text-decoration: underline;">SpendControl</span></NuxtLink>
+                        using the latest technologies such as
                         <span class="golden-words">Nuxt 3</span> and <span class="golden-words">Vue 3</span>.
                     </li>
                     <li>Planning and developing Interactive Static websites with Animations using <span
@@ -29,7 +30,7 @@
                     </li>
                 </ul>
             </v-card-text>
-            <v-btn class="bg-black ml-10 mb-10 certificate">
+            <v-btn class="ml-10 mb-10 certificate">
                 <NuxtLink style="text-decoration: none;"
                     to="https://drive.google.com/file/d/1ExALBSUU37tgpmQmStKxYJBSch5oeA6y/view" target="_blank"><span
                         class="btn-text">Certificate</span></NuxtLink>
@@ -53,17 +54,18 @@ h4 {
     font-weight: 600;
 }
 
-.card:hover h2 {
-    color: white;
+.card-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.card-title {
-    border-bottom: 1px solid white;
-}
 
 .card {
-    border-radius: 0;
-    border: 1px solid white;
+    backdrop-filter: blur(4px) saturate(120%);
+    -webkit-backdrop-filter: blur(4px) saturate(120%);
+    background-color: rgba(7, 7, 7, 0.38);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 0px;
 }
 
 
@@ -78,13 +80,15 @@ li {
 }
 
 .certificate {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 0px;
+    background-color: rgba(7, 7, 7, 0.38) ;
+}
+.certificate:hover{
+    border: 1px solid #FFB000;
 }
 
-.certificate:hover .btn-text {
+.certificate:hover .btn-text{
     color: #FFB000;
 }
-
-.certificate:hover {
-    border: 1px solid #FFB000;
-}</style>
+</style>

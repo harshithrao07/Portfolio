@@ -11,6 +11,7 @@
                     </v-col>
                 </v-row>
             </div>
+            <v-divider class="mt-16"></v-divider>
             <div class="mt-16">
                 <h2 class="mb-7">Frameworks and Libraries</h2>
                 <v-row class="justify-center">
@@ -20,6 +21,7 @@
                     </v-col>
                 </v-row>
             </div>
+            <v-divider class="mt-16"></v-divider>
             <div class="mt-16">
                     <h2 class="mb-7">Tools and Tech</h2>
                     <v-row class="justify-center">
@@ -136,4 +138,6 @@ h2 {
 .skills-parent {
     text-align: center;
 }
+
+
 </style>

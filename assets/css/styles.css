@@ -32,6 +32,13 @@ body {
     font-family: "Poppins";
     font-weight: 400;
     color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .golden-words {

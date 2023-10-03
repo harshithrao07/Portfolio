@@ -1,21 +1,18 @@
 <template>
-    <header>
-        <NavBar />
-    </header>
     <main>
-        <section class="first">
+        <section id="first">
             <Intro />
         </section>
-        <section class="second">
+        <section id="second">
             <About />
         </section>
-        <section class="third">
+        <section id="third">
             <Education />
         </section>
-        <section class="fourth">
+        <section id="fourth">
             <Experiences />
         </section>
-        <section class="fifth">
+        <section id="fifth">
             <Skills />
         </section>
     </main>
@@ -26,8 +23,7 @@
 </script>
 
 <style scoped>
-.first {
+#first{
     height: 100vh;
-    width: 100%;
 }
 </style>
