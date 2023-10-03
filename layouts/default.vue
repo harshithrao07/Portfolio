@@ -1,7 +1,7 @@
 <template>
     <nav class="d-flex justify-space-between align-center px-16 mb-4 py-4">
         <div class="left">
-            <NuxtLink to="#first" style="text-decoration: none;"><h2><span class="golden-words">H</span>arshith <span class="golden-words">R</span>ao.</h2></NuxtLink>
+            <NuxtLink to="/" style="text-decoration: none;"><h2><span class="golden-words">H</span>arshith <span class="golden-words">R</span>ao.</h2></NuxtLink>
         </div>
         <div class="right d-flex justify-center align-center">
             <ul v-for="(item, index) in navItems" :key="index" class="mx-3">
@@ -9,7 +9,7 @@
                     <li class="links mx-2">{{ item.name }}</li>
                 </NuxtLink>
             </ul>
-            <v-btn class="resume-btn my-auto mx-2"><NuxtLink target="_blank" class="resume-text" to="https://drive.google.com/file/d/15vLARzBD3c7qomQ6YWKEOSc1Fh2Hptcm/view?usp=sharing" style="text-decoration: none;">Download cv</NuxtLink></v-btn>
+            <v-btn class="resume-btn my-auto mx-2"><NuxtLink target="_blank" class="resume-text" to="https://drive.google.com/file/d/15vLARzBD3c7qomQ6YWKEOSc1Fh2Hptcm/view?usp=sharing" style="text-decoration: none;">View Resume</NuxtLink></v-btn>
         </div>
     </nav>
     <div>
@@ -20,12 +20,12 @@
 <script setup>
 let navItems = ref([
     {
-        name: "About",
-        to: "#second"
+        name: "Home",
+        to: "/"
     },
     {
         name: "Projects",
-        to: "/"
+        to: "/projects"
     },
     {
         name: "Contact Me",

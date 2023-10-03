@@ -4,7 +4,7 @@
         <div class="skills-parent">
             <div>
                 <h2 class="mb-7">Languages</h2>
-                <v-row class="justify-center">
+                <v-row class="justify-center align-center">
                     <v-col v-for="(item, index) in languages" :key="index">
                         <v-img :src="item.src" width="50%" class="mx-auto mb-2"></v-img>
                         <p>{{ item.name }}</p>
@@ -14,7 +14,7 @@
             <v-divider class="mt-16"></v-divider>
             <div class="mt-16">
                 <h2 class="mb-7">Frameworks and Libraries</h2>
-                <v-row class="justify-center">
+                <v-row class="justify-center align-center">
                     <v-col v-for="(item, index) in frameworks" :key="index" cols="12" md="2" class="mb-3">
                         <v-img :src="item.src" width="50%" class="mx-auto mb-2"></v-img>
                         <p>{{ item.name }}</p>
@@ -23,14 +23,14 @@
             </div>
             <v-divider class="mt-16"></v-divider>
             <div class="mt-16">
-                    <h2 class="mb-7">Tools and Tech</h2>
-                    <v-row class="justify-center">
-                        <v-col v-for="(item, index) in tools" :key="index" cols="12" md="2" class="mb-3">
-                            <v-img :src="item.src" width="50%" class="mx-auto mb-2"></v-img>
-                            <p>{{ item.name }}</p>
-                        </v-col>
-                    </v-row>
-                </div>
+                <h2 class="mb-7">Tools and Tech</h2>
+                <v-row class="justify-center align-center">
+                    <v-col v-for="(item, index) in tools" :key="index" cols="12" md="2" class="mb-3">
+                        <v-img :src="item.src" width="50%" class="mx-auto mb-2"></v-img>
+                        <p>{{ item.name }}</p>
+                    </v-col>
+                </v-row>
+            </div>
         </div>
     </v-container>
 </template>
@@ -84,6 +84,10 @@ let frameworks = ref([
         src: '/images/skills/frameworks/express.png'
     },
     {
+        name: 'EJS',
+        src: '/images/skills/frameworks/ejs.svg'
+    },
+    {
         name: 'MySql',
         src: '/images/skills/frameworks/mysql.png'
     },
@@ -98,7 +102,11 @@ let frameworks = ref([
     {
         name: 'Vuetify',
         src: '/images/skills/frameworks/vuetify.svg'
-    }
+    },
+        {
+        name: 'Tailwind CSS',
+        src: '/images/skills/frameworks/tailwind.png'
+    },
 ])
 let tools = ref([
     {
@@ -138,6 +146,4 @@ h2 {
 .skills-parent {
     text-align: center;
 }
-
-
 </style>

@@ -1,7 +1,7 @@
 <template>
     <v-container class="mt-16">
         <h1 class="mb-10">Education</h1>
-        <v-card class="card mb-10" v-for="(item, index) in items" :key="index">
+        <v-card class="card mb-0 py-5" v-for="(item, index) in items" :key="index">
             <div class="mt-3">
                 <v-card-title>
                     <h3>{{ item.name }} <NuxtLink :to="item.link" target="_blank">

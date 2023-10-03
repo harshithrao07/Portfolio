@@ -20,7 +20,7 @@
             </p>
         </div>
         <v-row class="mt-8">
-            <v-btn class="resume-btn ml-3"><NuxtLink target="_blank" to="https://drive.google.com/file/d/15vLARzBD3c7qomQ6YWKEOSc1Fh2Hptcm/view?usp=sharing" style="text-decoration: none;">Check out my Resume</NuxtLink></v-btn>
+            <v-btn class="resume-btn ml-3"><NuxtLink target="_blank" to="/projects" style="text-decoration: none;">Check out my projects</NuxtLink></v-btn>
         </v-row>
     </v-container>
 </template>
