@@ -4,8 +4,8 @@
             <v-col>
                 <v-row>
                     <h1>Hi, I'm <span class="golden-words">Harshith</span><br>and I am a passionate<br>
-                        <span class="typed-text golden-words">{{ typeValue }}</span>
-                        <span class="cursor golden-words" :class="{ 'typing': typeStatus }">&nbsp;</span>
+                        <span class="typed-text rainbow-words">{{ typeValue }}</span>
+                        <span class="cursor rainbow-words" :class="{ 'typing': typeStatus }">&nbsp;</span>
                     </h1>
                 </v-row>
                 <v-row class="mt-8">
@@ -109,7 +109,9 @@ export default {
 }
 
 .mdi:hover {
-    color: #FFB000;
+    background: linear-gradient(to right, #FFAE00, #FB00B8);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {

@@ -9,7 +9,7 @@
                     <li class="links mx-2">{{ item.name }}</li>
                 </NuxtLink>
             </ul>
-            <v-btn class="resume-btn my-auto mx-2"><NuxtLink target="_blank" class="resume-text" to="https://drive.google.com/file/d/15vLARzBD3c7qomQ6YWKEOSc1Fh2Hptcm/view?usp=sharing" style="text-decoration: none;">View Resume</NuxtLink></v-btn>
+            <v-btn class="resume-btn my-auto mx-2"><NuxtLink target="_blank" class="resume-text" to="https://drive.google.com/file/d/1eZI2e1Okdd15D8lkzZYygFFB9aNar2sA/view?usp=sharing" style="text-decoration: none;">View Resume</NuxtLink></v-btn>
         </div>
     </nav>
     <div>
@@ -27,10 +27,10 @@ let navItems = ref([
         name: "Projects",
         to: "/projects"
     },
-    {
-        name: "Contact Me",
-        to: "/"
-    }
+    // {
+    //     name: "Contact Me",
+    //     to: "/"
+    // }
 ])
 </script>
 

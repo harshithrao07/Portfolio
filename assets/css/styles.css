@@ -42,7 +42,13 @@ body::-webkit-scrollbar {
 }
 
 .golden-words {
-    color: #FFB000;
+    color: #FFAE00;
+}
+
+.rainbow-words {
+    background: linear-gradient(to right, #FFAE00, #FB00B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {

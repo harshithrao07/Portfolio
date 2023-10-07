@@ -45,10 +45,10 @@ let languages = ref([
         name: 'C++',
         src: '/images/skills/languages/c-.png'
     },
-    {
-        name: 'Java',
-        src: '/images/skills/languages/java.png'
-    },
+    // {
+    //     name: 'Java',
+    //     src: '/images/skills/languages/java.png'
+    // },
     {
         name: 'HTML',
         src: '/images/skills/languages/html.png'
@@ -103,10 +103,10 @@ let frameworks = ref([
         name: 'Vuetify',
         src: '/images/skills/frameworks/vuetify.svg'
     },
-        {
-        name: 'Tailwind CSS',
-        src: '/images/skills/frameworks/tailwind.png'
-    },
+    // {
+    //     name: 'Tailwind CSS',
+    //     src: '/images/skills/frameworks/tailwind.png'
+    // },
 ])
 let tools = ref([
     {
@@ -117,10 +117,10 @@ let tools = ref([
         name: 'GitHub',
         src: '/images/skills/tools/github.png'
     },
-    {
-        name: 'Postman',
-        src: '/images/skills/tools/postman-icon.png'
-    },
+    // {
+    //     name: 'Postman',
+    //     src: '/images/skills/tools/postman-icon.png'
+    // },
     {
         name: 'Netlify',
         src: '/images/skills/tools/netlify.png'

@@ -2,23 +2,45 @@
     <v-container class="my-16">
         <h1 class="mt-8">Projects</h1>
         <v-row v-for="(item, index) in projects" :key="index">
-            <v-card class="bg-black mt-13 py-5 px-3 card">
+            <v-card class="bg-black mt-13 card" width="100%">
                 <v-col>
                     <v-row>
-                        <v-card-title class="mb-2">
-                            <h2>{{ item.name }}</h2>
-                            <v-card-subtitle class="pl-0 mt-1">{{ item.timeline }}</v-card-subtitle>
-                        </v-card-title>
-                        <v-card-text>
-                            <ul v-for="(list, index) in item.about" :key="index">
-                                <li class="py-1">
-                                    {{ list }}
-                                </li>
-                            </ul>
-                        </v-card-text>
+                        <v-row class="card-title align-center">
+                            <v-col cols="12" md="6" sm="6" lg="6" xs="6">
+                                <v-card-title class="mb-2 pt-5">
+                                    <h2>{{ item.name }}</h2>
+                                    <v-card-subtitle class="pl-0 mt-1">{{ item.timeline }}</v-card-subtitle>
+                                </v-card-title>
+                            </v-col>
+                            <v-col cols="12" md="6" sm="6" lg="6" xs="6" class="d-flex justify-end">
+                                <v-btn class="link-btn mx-5">
+                                    <NuxtLink :to="item.src" target="_blank" style="text-decoration: none;"><span
+                                            class="mdi mdi-github"> Source Code</span>
+                                    </NuxtLink>
+                                </v-btn>
+                                <v-btn class="link-btn mr-5">
+                                    <NuxtLink :to="item.live" target="_blank" style="text-decoration: none;"><span
+                                            class="mdi mdi-link-variant"> Live Site</span>
+                                    </NuxtLink>
+                                </v-btn>
+                            </v-col>
+                        </v-row>
+                        <v-row>
+                            <v-col cols="12" md="12" sm="12" lg="12" xs="12">
+                                <v-card-text>
+                                    <ul v-for="(list, index) in item.about" :key="index">
+                                        <li class="py-1">
+                                            {{ list }}
+                                        </li>
+                                    </ul>
+                                </v-card-text>
+                            </v-col>
+                        </v-row>
                     </v-row>
                     <v-row>
-                        <v-card-title><h4>Technologies:</h4></v-card-title>
+                        <v-card-title>
+                            <h4>Technologies:</h4>
+                        </v-card-title>
                     </v-row>
                     <v-row class="align-center mt-0 py-0">
                         <v-col v-for="(tech, index) in item.technologies" :key="index" cols="12" md="2"><v-img
@@ -39,12 +61,14 @@ let projects = ref([
         name: 'Kenfront and SpendControl',
         timeline: 'Jul 2023 - Aug 2023',
         about: [
-            'An engaging multi-page landing site for Kenfront Consulting Private Limited and its product, SpendControl.', 'Built using latest technologies which offers enhanced performance resulting in a seamless user experience.'
+            'An engaging multi-page landing site for Kenfront Consulting Private Limited and its product , SpendControl with animations using Anime.js.', 'Built using latest technologies which offers enhanced performance resulting in a seamless user experience.'
         ],
         technologies: [
             { name: 'Vue.js', src: '/images/skills/frameworks/vuejs.png' }, { name: 'Nuxt.js', src: '/images/skills/frameworks/nuxt-js-icon.png' }, { name: 'Vuetify', src: '/images/skills/frameworks/vuetify.svg' },
-            { name: 'Anime.js', src: '/images/skills/frameworks/animejs.png'}
+            { name: 'Anime.js', src: '/images/skills/frameworks/animejs.png' }
         ],
+        src: 'https://github.com/harshithrao07/Kenfront-Public-Repo',
+        live: 'https://kenfront.netlify.app/'
 
     },
     {
@@ -55,8 +79,10 @@ let projects = ref([
         ],
         technologies: [
             { name: 'Node.js', src: '/images/skills/frameworks/nodejs.png' }, { name: 'Express.js', src: '/images/skills/frameworks/express.png' }, { name: 'EJS', src: '/images/skills/frameworks/ejs.svg' },
-            { name: 'MongoDB', src: '/images/skills/frameworks/mongodb.png' }, { name: 'Bootstrap', src: '/images/skills/frameworks/bootstrap.png'}
+            { name: 'MongoDB', src: '/images/skills/frameworks/mongodb.png' }, { name: 'Bootstrap', src: '/images/skills/frameworks/bootstrap.png' }
         ],
+        src: 'https://github.com/harshithrao07/Blogr',
+        live: 'https://excited-jade-handkerchief.cyclic.app/'
     },
     {
         name: 'Keeper',
@@ -68,6 +94,8 @@ let projects = ref([
             { name: 'MongoDB', src: '/images/skills/frameworks/mongodb.png' }, { name: 'Express.js', src: '/images/skills/frameworks/express.png' }, { name: 'React.js', src: '/images/skills/frameworks/react.png' },
             { name: 'Node.js', src: '/images/skills/frameworks/nodejs.png' }
         ],
+        src: 'https://github.com/harshithrao07/Keeper-MERN-stack',
+        live: 'https://keeper-app-mern.netlify.app/'
     },
     {
         name: 'Catadogs',
@@ -79,6 +107,8 @@ let projects = ref([
             { name: 'Node.js', src: '/images/skills/frameworks/nodejs.png' }, { name: 'Express.js', src: '/images/skills/frameworks/express.png' }, { name: 'EJS', src: '/images/skills/frameworks/ejs.svg' },
             { name: 'MongoDB', src: '/images/skills/frameworks/mongodb.png' }, { name: 'Bootstrap', src: '/images/skills/frameworks/bootstrap.png' }
         ],
+        src: 'https://github.com/harshithrao07/Catadogs',
+        live: 'https://frightened-ruby-stockings.cyclic.app/'
     }
 ])
 </script>
@@ -108,8 +138,19 @@ h4 {
     font-weight: 400;
 }
 
-.card{
+.card {
     border: 1px solid #b5b8be;
     border-radius: 0;
+}
+
+.link-btn {
+    background-color: black;
+    border: 1px solid #b5b8be;
+    border-radius: 0px;
+    width: 30%;
+}
+
+.card-title {
+    border-bottom: 1px solid #b5b8be;
 }
 </style>
