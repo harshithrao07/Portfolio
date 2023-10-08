@@ -13,16 +13,16 @@
                                 </v-card-title>
                             </v-col>
                             <v-col cols="12" md="6" sm="6" lg="6" xs="6" class="d-flex justify-end">
-                                <v-btn class="link-btn mx-5">
-                                    <NuxtLink :to="item.src" target="_blank" style="text-decoration: none;"><span
-                                            class="mdi mdi-github"> Source Code</span>
-                                    </NuxtLink>
-                                </v-btn>
-                                <v-btn class="link-btn mr-5">
-                                    <NuxtLink :to="item.live" target="_blank" style="text-decoration: none;"><span
-                                            class="mdi mdi-link-variant"> Live Site</span>
-                                    </NuxtLink>
-                                </v-btn>
+                                <NuxtLink :to="item.src" target="_blank" style="text-decoration: none;">
+                                    <v-btn class="link-btn mx-5">
+                                        <span class="mdi mdi-github"> Source Code</span>
+                                    </v-btn>
+                                </NuxtLink>
+                                <NuxtLink :to="item.live" target="_blank" style="text-decoration: none;">
+                                    <v-btn class="link-btn mr-5">
+                                        <span class="mdi mdi-link-variant"> Live Site</span>
+                                    </v-btn>
+                                </NuxtLink>
                             </v-col>
                         </v-row>
                         <v-row>
@@ -147,7 +147,6 @@ h4 {
     background-color: black;
     border: 1px solid #b5b8be;
     border-radius: 0px;
-    width: 30%;
 }
 
 .card-title {
