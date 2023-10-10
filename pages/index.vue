@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="mt-16">
         <section id="first">
             <Intro />
         </section>
@@ -15,6 +15,9 @@
         <section id="fifth">
             <Skills />
         </section>
+        <section id="sixth">
+            <Footer />
+        </section>
     </main>
 </template>
 
@@ -23,7 +26,5 @@
 </script>
 
 <style scoped>
-#first{
-    height: 100vh;
-}
+
 </style>

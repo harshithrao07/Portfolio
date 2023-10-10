@@ -1,5 +1,5 @@
 <template>
-    <v-container class="mt-16">
+    <v-container class="mt-16 px-7">
         <div>
             <h1 class="mb-3">About Me</h1>
             <p class="mb-4">
@@ -20,7 +20,7 @@
             </p>
         </div>
         <v-row class="mt-8">
-            <v-btn class="resume-btn ml-3"><NuxtLink to="/projects" style="text-decoration: none;">Check out my projects</NuxtLink></v-btn>
+            <v-btn class="resume-btn ml-3"><NuxtLink to="/projects" style="text-decoration: none;"><p class="resume-text">Check out my projects</p></NuxtLink></v-btn>
         </v-row>
     </v-container>
 </template>
@@ -32,11 +32,13 @@
 <style scoped>
 .resume-btn {
     background-color: black;
-    width: 20%;
     border: 1px solid white;
     border-radius: 0px;
 }
-
+.resume-text{
+    color: white;
+    font-weight: 300;
+}
 .wave {
     animation-name: wave-animation;
     /* Refers to the name of your @keyframes element below */

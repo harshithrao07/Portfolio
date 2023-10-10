@@ -52,11 +52,87 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #b5b8be;
+}
+
+@media only screen and (min-width:2400px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width:1919px) and (min-width:1600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width:1599px) and (min-width:1366px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:1365px) and (min-width:1280px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1279px) and (min-width:1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width:600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:599px) and (min-width:300px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:299px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
 }

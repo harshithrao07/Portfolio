@@ -1,7 +1,9 @@
 <template>
     <nav class="d-flex justify-space-between align-center px-16 mb-4 py-4">
         <div class="left">
-            <NuxtLink to="/" style="text-decoration: none;"><h2><span class="golden-words">H</span>arshith <span class="golden-words">R</span>ao.</h2></NuxtLink>
+            <NuxtLink to="/" style="text-decoration: none;">
+                <h1><span class="golden-words">H</span>arshith <span class="golden-words">R</span>ao.</h1>
+            </NuxtLink>
         </div>
         <div class="right d-flex justify-center align-center">
             <ul v-for="(item, index) in navItems" :key="index" class="mx-3">
@@ -9,7 +11,11 @@
                     <li class="links mx-2">{{ item.name }}</li>
                 </NuxtLink>
             </ul>
-            <v-btn class="resume-btn my-auto mx-2"><NuxtLink target="_blank" class="resume-text" to="https://drive.google.com/file/d/1eZI2e1Okdd15D8lkzZYygFFB9aNar2sA/view?usp=sharing" style="text-decoration: none;">View Resume</NuxtLink></v-btn>
+            <v-btn class="resume-btn my-auto mx-2">
+                <NuxtLink target="_blank" class="resume-text"
+                    to="https://drive.google.com/file/d/1eZI2e1Okdd15D8lkzZYygFFB9aNar2sA/view?usp=sharing"
+                    style="text-decoration: none;">View Resume</NuxtLink>
+            </v-btn>
         </div>
     </nav>
     <div>
@@ -27,10 +33,10 @@ let navItems = ref([
         name: "Projects",
         to: "/projects"
     },
-    // {
-    //     name: "Contact Me",
-    //     to: "/"
-    // }
+    {
+        name: "Contact Me",
+        to: "/contact"
+    }
 ])
 </script>
 
@@ -42,29 +48,27 @@ nav {
     left: 0;
     right: 0;
     z-index: 1;
-      backdrop-filter: blur(5px) saturate(168%);
+    backdrop-filter: blur(5px) saturate(168%);
     -webkit-backdrop-filter: blur(5px) saturate(168%);
     background-color: rgba(11, 13, 13, 0.38);
-    border: 1px solid rgba(233, 225, 225, 0.125);
+    border-bottom: 1px solid rgba(233, 225, 225, 0.125);
 }
-.resume-btn{
+
+.resume-btn {
     background-color: rgba(11, 13, 13, 0.38);
     border: 1px solid white;
     border-radius: 0px;
 }
-.resume-btn:hover{
+
+.resume-btn:hover {
     border: 1px solid #FFB000;
 }
-.resume-btn:hover .resume-text{
+
+.resume-btn:hover .resume-text {
     color: #FFB000;
 }
-.left {
-    font-size: 1.5rem
-}
-li{
-    font-size: 1.1rem;
-}
-.links:hover{
+
+
+.links:hover {
     color: #FFB000;
-}
-</style>
+}</style>

@@ -1,26 +1,26 @@
 <template>
-    <v-container class="my-16">
-        <h1 class="mt-8">Projects</h1>
+    <v-container class="my-16 px-7">
+        <h1 class="mt-8 project-title">Projects</h1>
         <v-row v-for="(item, index) in projects" :key="index">
             <v-card class="bg-black mt-13 card" width="100%">
                 <v-col>
                     <v-row>
                         <v-row class="card-title align-center">
                             <v-col cols="12" md="6" sm="6" lg="6" xs="6">
-                                <v-card-title class="mb-2 pt-5">
+                                <v-card-title class="mb-0 pt-5">
                                     <h2>{{ item.name }}</h2>
                                     <v-card-subtitle class="pl-0 mt-1">{{ item.timeline }}</v-card-subtitle>
                                 </v-card-title>
                             </v-col>
-                            <v-col cols="12" md="6" sm="6" lg="6" xs="6" class="d-flex justify-end">
+                            <v-col cols="12" md="6" sm="6" lg="6" xs="6" class="d-flex justify-md-end justify-sm-start mb-3 mb-md-0 mb-lg-0">
                                 <NuxtLink :to="item.src" target="_blank" style="text-decoration: none;">
                                     <v-btn class="link-btn mx-5">
-                                        <span class="mdi mdi-github"> Source Code</span>
+                                        <p class="link-txt">Source Code</p>
                                     </v-btn>
                                 </NuxtLink>
                                 <NuxtLink :to="item.live" target="_blank" style="text-decoration: none;">
                                     <v-btn class="link-btn mr-5">
-                                        <span class="mdi mdi-link-variant"> Live Site</span>
+                                        <p class="link-txt">Live Site</p>
                                     </v-btn>
                                 </NuxtLink>
                             </v-col>
@@ -43,7 +43,7 @@
                         </v-card-title>
                     </v-row>
                     <v-row class="align-center mt-0 py-0">
-                        <v-col v-for="(tech, index) in item.technologies" :key="index" cols="12" md="2"><v-img
+                        <v-col v-for="(tech, index) in item.technologies" :key="index" cols="4" md="2"><v-img
                                 :src="tech.src" width="35%" class="mx-auto">
                             </v-img>
                             <p>{{ tech.name }}</p>
@@ -114,9 +114,13 @@ let projects = ref([
 </script>
 
 <style scoped>
-h1 {
+.project-title {
     display: inline-block;
     border-bottom: 7px solid #FFB000;
+}
+
+h2{
+    white-space: pre-wrap;
 }
 
 p {
@@ -151,5 +155,9 @@ h4 {
 
 .card-title {
     border-bottom: 1px solid #b5b8be;
+}
+
+.link-txt{
+    color: white;
 }
 </style>

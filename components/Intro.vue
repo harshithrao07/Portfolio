@@ -1,39 +1,21 @@
 <template>
-    <v-container class="mt-10 fill-height">
+    <v-container class="mt-5 fill-height px-7">
         <v-row class="justify-center align-center h-100">
-            <v-col>
-                <v-row>
-                    <h1>Hi, I'm <span class="golden-words">Harshith</span><br>and I am a passionate<br>
-                        <span class="typed-text rainbow-words">{{ typeValue }}</span>
-                        <span class="cursor rainbow-words" :class="{ 'typing': typeStatus }">&nbsp;</span>
-                    </h1>
-                </v-row>
-                <v-row class="mt-8">
-                    <v-col cols="12" md="2" class="pl-0">
-                        <NuxtLink to="https://www.linkedin.com/in/harshithrao07/" target="_blank">
-                            <span class="mdi mdi-linkedin"></span>
-                        </NuxtLink>
-                    </v-col>
-                    <v-col cols="12" md="2" class="pl-0">
-                        <NuxtLink to="https://github.com/harshithrao07/" target="_blank">
-                            <span class="mdi mdi-github"></span>
-                        </NuxtLink>
-                    </v-col>
-                    <v-col cols="12" md="2" class="pl-0">
-                        <NuxtLink to="https://www.instagram.com/harshith._.rao/" target="_blank">
-                            <span class="mdi mdi-instagram"></span>
-                        </NuxtLink>
-                    </v-col>
-                    <v-col cols="12" md="2" class="pl-0">
-                        <NuxtLink to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=harshithrao316@gmail.com"
-                            target="_blank">
-                            <span class="mdi mdi-gmail"></span>
-                        </NuxtLink>
-                    </v-col>
-                </v-row>
-            </v-col>
-            <v-col class="py-10">
+            <v-col class="py-10" cols="12" lg="6" order-md="2" order-lg="2" md="6" sm="12" xs="12">
                 <v-img src="/images/harshith_rao1.jpeg" width="55%" class="mx-auto image my-5"></v-img>
+            </v-col>
+            <v-col cols="12" lg="6" order-md="1" order-lg="1" class="px-5" md="6" sm="12" xs="12">
+                <h1 class="mt-5">Hi, I'm <span class="golden-words">Harshith</span><br>and I am a passionate<br>
+                    <span class="typed-text rainbow-words">{{ typeValue }}</span>
+                    <span class="cursor rainbow-words" :class="{ 'typing': typeStatus }">&nbsp;</span>
+                </h1>
+                <div class="d-flex mt-7">
+                    <div v-for="(item, index) in items" :key="index" class="mr-10">
+                        <NuxtLink :to="item.to" target="_blank">
+                            <span class="mdi" :class="item.icon"></span>
+                        </NuxtLink>
+                    </div>
+                </div>
             </v-col>
         </v-row>
     </v-container>
@@ -51,6 +33,28 @@ export default {
             newTextDelay: 1000,
             typeArrayIndex: 0,
             charIndex: 0,
+            items: [
+                {
+                    to: 'https://www.linkedin.com/in/harshithrao07/',
+                    icon: 'mdi-linkedin',
+                    name: 'harshithrao07'
+                },
+                {
+                    to: 'https://github.com/harshithrao07/',
+                    icon: 'mdi-github',
+                    name: 'harshithrao07'
+                },
+                {
+                    to: 'https://www.instagram.com/harshith._.rao/',
+                    icon: 'mdi-instagram',
+                    name: 'harshith._.rao'
+                },
+                {
+                    to: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=harshithrao316@gmail.com',
+                    icon: 'mdi-gmail',
+                    name: 'harshithrao316@gmail.com'
+                }
+            ]
         }
     },
     methods: {
@@ -110,7 +114,7 @@ export default {
 
 .mdi:hover {
     background: linear-gradient(to right, #FFAE00, #FB00B8);
-        -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -144,4 +148,11 @@ h1 {
     99% {
         background-color: transparent;
     }
-}</style>
+}
+
+@media only screen and (max-width:900px) {
+    .mdi{
+        font-size: 1.7rem;
+    }
+}
+</style>

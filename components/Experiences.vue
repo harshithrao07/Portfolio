@@ -1,5 +1,5 @@
 <template>
-    <v-container class="mt-16">
+    <v-container class="mt-16 px-7">
         <h1 class="mb-10">Experiences</h1>
         <v-card class="card">
             <v-card-title class="mt-3 pb-4 card-title">
@@ -8,7 +8,7 @@
                         <MdiIcon icon="mdiLinkVariant"></MdiIcon>
                     </NuxtLink>
                 </h2>
-                <h4 class="golden-words ml-2">Frontend Web Developer</h4>
+                <h4 class="rainbow-words ml-2">Frontend Web Developer</h4>
                 <v-card-subtitle class="px-0 ml-2">Jul 2023 - Aug 2023</v-card-subtitle>
             </v-card-title>
             <v-card-text class="mb-0 mt-5">
@@ -52,6 +52,7 @@ h1 {
 h2,
 h4 {
     font-weight: 600;
+    white-space: pre-wrap;
 }
 
 .card-title {
