@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   app: {
     head: {
-      title: "Portfolio | Harshith Rao",
+      title: "Harshith Rao",
       meta: [
         // <meta name="viewport" content="width=device-width, initial-scale=1">
         { name: "viewport", content: "width=device-width, initial-scale=1" },
