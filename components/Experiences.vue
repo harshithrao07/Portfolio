@@ -1,24 +1,24 @@
 <template>
     <v-container class="mt-16 px-7">
-        <h1 class="mb-10">Experiences</h1>
+        <h1 class="title mb-10">Experiences</h1>
         <v-card class="card">
             <v-card-title class="mt-3 pb-4 card-title">
-                <h2 class="ml-2">Exelon Circuits Pvt. Ltd.
+                <h1 class="ml-2">Exelon Circuits Pvt. Ltd.
                     <NuxtLink to="https://exeloncircuits.com/" target="_blank">
                         <MdiIcon icon="mdiLinkVariant"></MdiIcon>
                     </NuxtLink>
-                </h2>
-                <h4 class="rainbow-words ml-2">Frontend Web Developer</h4>
+                </h1>
+                <h5 class="rainbow-words ml-2">Frontend Web Developer</h5>
                 <v-card-subtitle class="px-0 ml-2">Jul 2023 - Aug 2023</v-card-subtitle>
             </v-card-title>
             <v-card-text class="mb-0 mt-5">
                 <ul class="py-1">
-                    <li>Worked on building a multi page landing site for <NuxtLink target="_blank"
+                    <li>Worked on building a multi page landing site for a US client, <NuxtLink target="_blank"
                             to="https://www.kenfront.com/" style="text-decoration: none;"><span class="golden-words"
-                                style="text-decoration: underline;">Kenfront Consulting Private
-                                Limited</span></NuxtLink> and <NuxtLink target="_blank"
+                                >Kenfront Consulting Private
+                                Limited</span></NuxtLink> and its product, <NuxtLink target="_blank"
                             to="https://main--remarkable-cannoli-dbdc73.netlify.app/" style="text-decoration: none;"><span
-                                class="golden-words" style="text-decoration: underline;">SpendControl</span></NuxtLink>
+                                class="golden-words">SpendControl</span></NuxtLink>
                         using the latest technologies such as
                         <span class="golden-words">Nuxt 3</span> and <span class="golden-words">Vue 3</span>.
                     </li>
@@ -44,13 +44,17 @@
 </script>
 
 <style scoped>
-h1 {
+.title{
     display: inline-block;
     border-bottom: 7px solid #FFB000;
 }
 
+h1{
+    white-space: pre-wrap;
+}
+
 h2,
-h4 {
+h5 {
     font-weight: 600;
     white-space: pre-wrap;
 }
@@ -91,5 +95,12 @@ li {
 
 .certificate:hover .btn-text{
     color: #FFB000;
+}
+
+@media only screen and (max-width: 700px)
+{
+    li{
+        font-size: 1rem;
+    }
 }
 </style>

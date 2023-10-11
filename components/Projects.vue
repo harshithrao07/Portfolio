@@ -160,4 +160,11 @@ h4 {
 .link-txt{
     color: white;
 }
+
+@media only screen and (max-width: 700px)
+{
+    li{
+        font-size: 1rem;
+    }
+}
 </style>

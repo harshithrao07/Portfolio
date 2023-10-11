@@ -3,7 +3,7 @@
         <h1 class="my-16">Skills</h1>
         <div class="skills-parent">
             <div>
-                <h2 class="mb-7">Languages</h2>
+                <h2 class="mb-7 rainbow-words">Languages</h2>
                 <v-row class="justify-center align-center">
                     <v-col v-for="(item, index) in languages" :key="index" cols="4" md="2">
                         <v-img :src="item.src" width="50%" class="mx-auto mb-2 skill-pics"></v-img>
@@ -13,7 +13,7 @@
             </div>
             <v-divider class="mt-16"></v-divider>
             <div class="mt-16">
-                <h2 class="mb-7">Frameworks and Libraries</h2>
+                <h2 class="mb-7 rainbow-words">Frameworks and Libraries</h2>
                 <v-row class="justify-center align-center">
                     <v-col v-for="(item, index) in frameworks" :key="index" cols="4" md="2">
                         <v-img :src="item.src" width="50%" class="mx-auto mb-2 skill-pics"></v-img>
@@ -23,7 +23,7 @@
             </div>
             <v-divider class="mt-16"></v-divider>
             <div class="mt-16">
-                <h2 class="mb-7">Tools and Tech</h2>
+                <h2 class="mb-7 rainbow-words">Tools and Tech</h2>
                 <v-row class="justify-center align-center">
                     <v-col v-for="(item, index) in tools" :key="index" class="mb-3" cols="4" md="2">
                         <v-img :src="item.src" width="50%" class="mx-auto mb-2 skill-pics"></v-img>
