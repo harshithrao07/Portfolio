@@ -15,7 +15,7 @@
                     </ul>
                     <v-btn class="resume-btn my-auto mx-2">
                         <NuxtLink target="_blank" class="resume-text"
-                            to="https://drive.google.com/file/d/1eZI2e1Okdd15D8lkzZYygFFB9aNar2sA/view?usp=sharing"
+                            to="https://flowcv.com/resume/hj7caj6o85"
                             style="text-decoration: none;">View Resume</NuxtLink>
                     </v-btn>
                 </div>
@@ -41,7 +41,7 @@
             </ul>
             <v-btn class="resume-btn my-3">
                 <NuxtLink target="_blank" class="resume-text"
-                    to="https://drive.google.com/file/d/1eZI2e1Okdd15D8lkzZYygFFB9aNar2sA/view?usp=sharing"
+                    to="https://flowcv.com/resume/hj7caj6o85"
                     style="text-decoration: none;">View Resume</NuxtLink>
             </v-btn>
         </v-navigation-drawer>
