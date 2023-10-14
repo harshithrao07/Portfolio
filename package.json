@@ -20,6 +20,7 @@
     "@emailjs/browser": "^3.11.0",
     "@flaticon/flaticon-uicons": "^2.4.0",
     "@mdi/font": "^7.2.96",
+    "@nuxtjs/cloudinary": "^2.3.4",
     "sass": "^1.68.0",
     "vue-typed-js": "^0.1.2",
     "vuetify": "^3.4.0-alpha.1"
