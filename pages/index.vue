@@ -4,19 +4,19 @@
             <Intro />
         </section>
         <section id="second">
-            <About />
+            <LazyAbout />
         </section>
         <section id="third">
-            <Education />
+            <LazyEducation />
         </section>
         <section id="fourth">
-            <Experiences />
+            <LazyExperiences />
         </section>
         <section id="fifth">
-            <Skills />
+            <LazySkills />
         </section>
         <section id="sixth">
-            <Footer />
+            <LazyFooter />
         </section>
     </main>
 </template>

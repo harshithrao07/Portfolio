@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/fontaine": "^0.4.1",
     "nuxt": "^3.7.4",
+    "nuxt-delay-hydration": "^1.2.3",
     "nuxt-mdi": "^1.1.1",
     "nuxt-vercel-analytics": "^0.2.2",
     "vue": "^3.3.4",
@@ -21,6 +23,7 @@
     "@emailjs/browser": "^3.11.0",
     "@flaticon/flaticon-uicons": "^2.4.0",
     "@mdi/font": "^7.2.96",
+    "@nuxtjs/critters": "^0.5.1",
     "sass": "^1.68.0",
     "vue-typed-js": "^0.1.2",
     "vuetify": "^3.4.0-alpha.1"
