@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    'nuxt-mdi'
+    'nuxt-mdi', 'nuxt-vercel-analytics'
   ],
   css: ['vuetify/lib/styles/main.sass', '@/assets/css/styles.css', "@mdi/font/css/materialdesignicons.min.css"],
   build: {
