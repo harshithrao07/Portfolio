@@ -13,6 +13,7 @@
     "@nuxt/devtools": "latest",
     "nuxt": "^3.7.4",
     "nuxt-mdi": "^1.1.1",
+    "nuxt-purgecss": "^2.0.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -20,6 +21,7 @@
     "@emailjs/browser": "^3.11.0",
     "@flaticon/flaticon-uicons": "^2.4.0",
     "@mdi/font": "^7.2.96",
+    "@nuxtjs/critters": "^0.5.1",
     "sass": "^1.68.0",
     "vue-typed-js": "^0.1.2",
     "vuetify": "^3.4.0-alpha.1"

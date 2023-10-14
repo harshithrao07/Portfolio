@@ -12,11 +12,27 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    'nuxt-mdi'
+    'nuxt-mdi', '@nuxtjs/critters', 'nuxt-purgecss'
   ],
   css: ['vuetify/lib/styles/main.sass', '@/assets/css/styles.css', "@mdi/font/css/materialdesignicons.min.css"],
   build: {
     transpile: ['vuetify'],
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true
+      }
+    }
   },
   vite: {
     define: {
